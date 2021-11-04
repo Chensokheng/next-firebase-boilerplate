@@ -2,13 +2,16 @@ import "../styles/globals.css";
 import "../src/config/firebase.config";
 import { AuthProvider } from "../src/hook/auth";
 import AuthStateChanged from "../src/layout/AuthStateChanged";
+import AppLayout from "../src/layout/AppLayout";
 
 function MyApp({ Component, pageProps }) {
 	return (
 		<AuthProvider>
-			<AuthStateChanged>
-				<Component {...pageProps} />
-			</AuthStateChanged>
+			<AppLayout>
+				<AuthStateChanged>
+					<Component {...pageProps} />
+				</AuthStateChanged>
+			</AppLayout>
 		</AuthProvider>
 	);
 }

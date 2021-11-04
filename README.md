@@ -4,7 +4,7 @@
 - [x] authentication and context provider
 - [x] protected Routes
 - [x] Upgrade firebase from v8 to v9
-- [ ] Default Layout
+- [x] Default Layout
 - [ ] save the user to FireStore
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
